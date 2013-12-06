@@ -1,0 +1,96 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+html{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 22px;
+}
+body{
+	background: #F8F8F8;
+}
+img{
+	max-width: 100%;
+}
+fieldset{
+	border: none;
+	border-bottom: 1px dashed darkblue;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+fieldset:last-child{
+	border:none;
+}
+label{
+	font-size: 1.2em;
+}
+input{
+	border:1px solid #D6D6D6;
+	border-radius: .25em;
+	display: block;
+	font-size: 1em;
+	margin-top: .25em;
+	padding: .5em;
+	width: 100%;
+}
+
+button{
+	background: blue;
+	color:white;
+	border:none;
+	border-bottom: 3px solid darkblue;
+	border-radius: .25em;
+	font-size: 1em;
+	padding:.75em;
+
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+button:hover{
+	background:#06F;
+}
+
+label, input, button { margin-bottom: .25em; }
+
+.overlay{
+	background: black;
+	bottom: 0;
+	left:0;
+	opacity: .5;
+	position: absolute;
+	top:0;
+	right:0;
+	z-index: 10;
+}
+
+.results{
+	position: absolute;
+	z-index: 11;
+	background: white;
+	position: absolute;
+	width: 90%;
+	height: 60%;
+	font-size: .5em;
+	left:5%;
+	top:5%;
+	padding:1em;
+}
+
+.wrapper{
+	margin: 1em auto 0;
+	max-width: 700px;
+	width: 90%;
+}
+@media all and (min-width: 500px){
+	.doge, .fields{
+		float: left;
+		margin-right:2%;
+		width: 50%;
+	}
+	.fields{
+		width: 45%;
+	}
+}
